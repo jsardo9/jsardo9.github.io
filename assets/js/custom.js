@@ -4,12 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-$(document).ready(function() {
+$(document).ready(function () {
 	var img = document.getElementById("crop-this-image");
 	var resultDiv = document.getElementById("crop-this-div");
 	var cropinst;
 	var toggle = false;
-	$("#crop-this-button").on("click", function() {
+	$("#crop-this-button").on("click", function () {
 		if (!toggle) {
 			cropinst = new Croppie(img, {
 				viewport: { width: 200, height: 200, type: "circle" },
@@ -28,8 +28,8 @@ $(document).ready(function() {
 		toggle = !toggle;
 	});
 
-	$("#github-button").on("click", function() {
-		window.location = "https://github.com/ss5nathan/codeSamples"
+	$("#github-button").on("click", function () {
+		window.location = "https://github.com/jsardo9"
 	});
 
 });
